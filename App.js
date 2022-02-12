@@ -30,6 +30,7 @@ buttonHome.addEventListener("click", ()=>{
         scorePeriod.innerText = (parseInt(scorePeriod.innerText) + 1).toString().padStart(2, "0");
 
         scoreHome.innerText = "00";
+        scoreAway.innerText = "00";
 
         if (scorePeriod.innerText == "01") { 
 
@@ -76,6 +77,7 @@ buttonAway.addEventListener("click", ()=>{
         scorePeriod.innerText = (parseInt(scorePeriod.innerText) + 1).toString().padStart(2, "0");
 
         scoreAway.innerText = "00";
+        scoreHome.innerText = "00";
 
         if (scorePeriod.innerText == "01") { 
 

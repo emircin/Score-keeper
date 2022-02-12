@@ -84,4 +84,7 @@ img{
     *{
         font-size: 8px;
     }
+    img{
+        height: 4rem;
+    }
 }
