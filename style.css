@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+
+}
+@font-face {
+    font-family: 'digital7';
+    src: local('digital-7'),
+         local('digital 7'),
+         url(./fonts/digital-7.ttf);
+}
+body {
+    background-image: url(./images/football-ball.png);
+    background-repeat: repeat;
+    background-size:10rem;
+}
+.score--table {
+    background-color: black;
+    display: flex;
+    color: #fff349;
+    justify-content:space-around;
+    text-align: center;
+    margin: 10rem 10rem 0 10rem;
+    padding: 1rem 0;
+    border-top: 1.5rem solid #fff349;
+}
+.score--table p{
+    font-size: 2rem;
+}
+span {
+    font-size: 8rem;
+    font-family: 'digital7';
+    color: red;
+}
+.home, .away {
+    margin-top: 2rem;
+    width: 12rem;
+}
+.period span {
+    font-size: 3rem;
+    color: green;
+}
+.winner-away,
+.winner-home{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 1rem;
+} 
+.winner-away div,
+.winner-home div{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    font-size: 0.8rem;
+    color: black;
+
+}
+.button-score {
+    border-radius: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: blue;
+};
+.winer {
+    margin-top: 20rem;
+}
+img{
+    height: 8rem;
+}
+
+@media screen and (max-width: 760px) {
+    *{
+        font-size: 10px;
+    }
+    img{
+        height: 6rem;
+    }
+    
+}
