@@ -56,14 +56,25 @@ buttonHome.addEventListener("click", ()=>{
 
 
     }
-    if (a == 3 || b == 3 || (a == 2 && b == 1) || (a == 1 && b == 2)) {
-        setTimeout(() => (winner.innerHTML = "<img src='./images/giphy.gif' alt=''></img>"),
+    if (a == 3 || (a == 2 && b == 1)){
+        setTimeout(() => (winner.innerHTML = "<p class='parag'>The winner is Home Team.</p>"),
         
         1000);
 
         setTimeout(() => (scorePeriod.innerText = "00"),
         
         1000);
+    };
+    if (b == 3 || (a == 1 && b == 2)) {
+        setTimeout(() => (winner.innerHTML = "<p class='parag'>The winner is Away Team.</p>"),
+        
+        1000);
+
+        setTimeout(() => (scorePeriod.innerText = "00"),
+        
+        1000);
+
+        
     };
 
 });
@@ -102,8 +113,8 @@ buttonAway.addEventListener("click", ()=>{
 
     }
 
-    if (a == 3 || b == 3 || (a == 2 && b == 1) || (a == 1 && b == 2)) {
-        setTimeout(() => (winner.innerHTML = "<img src='./images/giphy.gif' alt='' width='200px'></img>"),
+    if (b == 3 || (a == 1 && b == 2)) {
+        setTimeout(() => (winner.innerHTML = "<p class='parag'>The winner is Away Team.</p>"),
         
         1000);
 
@@ -112,6 +123,15 @@ buttonAway.addEventListener("click", ()=>{
         1000);
 
         
+    };
+    if (a == 3 || (a == 2 && b == 1)){
+        setTimeout(() => (winner.innerHTML = "<p class='parag'>The winner is Home Team.</p>"),
+        
+        1000);
+
+        setTimeout(() => (scorePeriod.innerText = "00"),
+        
+        1000);
     };
 
     

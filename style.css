@@ -42,6 +42,11 @@ span {
     font-size: 3rem;
     color: green;
 }
+.period .winner p{
+    font-size: 1.3rem;
+    margin-top: 5rem;
+    color: red;
+}
 .winner-away,
 .winner-home{
     display: flex;
@@ -63,28 +68,21 @@ span {
     width: 2rem;
     height: 2rem;
     background-color: blue;
-};
-.winer {
-    margin-top: 20rem;
 }
-img{
-    height: 8rem;
-}
+
 
 @media screen and (max-width: 760px) {
     *{
         font-size: 10px;
     }
-    img{
-        height: 6rem;
-    }
+    
     
 }
 @media screen and (max-width: 600px) {
     *{
         font-size: 8px;
     }
-    img{
-        height: 4rem;
+    .score--table {
+        margin-top: 20rem;
     }
 }
